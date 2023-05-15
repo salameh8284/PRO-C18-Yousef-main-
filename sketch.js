@@ -23,12 +23,13 @@ function setup(){
 //create a canvas
 
 // createCanvas(window,window);
-// createCanvas(windowWidth,windowHeight);
+ createCanvas(windowWidth,windowHeight);
 // createCanvas(width,height);
-// createCanvas(200,200);
+//createCanvas(200,200);
 
 // Moving background
-
+console.log(" the Width is " +width);
+console.log(" the Width is " +windowWidth);
 path=createSprite(width/2,200);
 path.addImage(pathImg);
 path.velocityY = 4;
@@ -70,9 +71,9 @@ function draw() {
   //   path.y = height;
   // }
 
-  // if(path.y > height ){
-  //   path.y = height/2;
-  // }
+   if(path.y > height ){
+     path.y = height/2;
+   }
   
     createCash();
     createDiamonds();
